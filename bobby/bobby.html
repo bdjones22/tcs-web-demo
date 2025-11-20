@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bobby Brown III, MA., LPCC | Empowered Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        Empowered Living Mental Health Solutions
+        <span>Therapy & Rehabilitation in St. Paul, MN</span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">Our Approach</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#providers">Clinicians</a></li>
+          <li><a href="akeya.html">Akeya</a></li>
+          <li><a href="bobby.html">Bobby</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / PROFILE HEADER -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="badge">Clinician Profile</div>
+          <h1>Bobby Brown III, MA., LPCC</h1>
+          <p class="hero-subtitle">
+            Client-centered, trauma-informed care with a culturally grounded and spiritually rooted perspective.
+          </p>
+          <p class="hero-meta">
+            <strong>Specialties:</strong> Trauma · Anxiety · Depression · Life Transitions · Spirituality & Identity<br>
+            <strong>Populations:</strong> Adults and families · Marginalized and BIPOC communities
+          </p>
+        </div>
+        <div class="hero-photo">
+          <!-- Replace with a real photo for Bobby -->
+          <img src="images/bobby.jpg" alt="Photo of Bobby Brown III">
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL BIO -->
+    <section>
+      <div class="container">
+        <div class="bio-card">
+          <h3>Your journey toward healing and strength</h3>
+          <p>
+            Life’s challenges and past traumas can cast a long shadow, especially for those in marginalized communities. If you are
+            ready to move toward a more healthy and functional life, I am here to walk with you. My purpose is to help you overcome
+            the emotional and social impacts of trauma and boldly live the happy, healthy life you deserve.
+          </p>
+
+          <h3>A compassionate and culturally responsive approach</h3>
+          <p>
+            As a Black male psychotherapist, I offer a therapy space that is deeply respectful of your cultural context and personal
+            history. My approach is client-centered and trauma-informed, built on the belief that you are the expert on your own life.
+            I provide a supportive and collaborative environment, gently guiding you toward deeper insight in one’s own humanity—with
+            a touch of humor, all rooted in spirituality.
+          </p>
+
+          <h3>Specialized expertise for your growth</h3>
+          <p>Using evidence-based therapeutic interventions, we will work together to develop effective strategies for your healing. My training includes:</p>
+          <ul>
+            <li><strong>Client-Centered Therapy:</strong> Empowering you to guide your own process toward self-discovery and growth.</li>
+            <li><strong>Cognitive Behavioral Therapy (CBT):</strong> Identifying and reshaping negative thought patterns that may be holding you back.</li>
+            <li><strong>Insight-Oriented Therapy:</strong> Exploring how past experiences influence your present emotions and behaviors.</li>
+            <li><strong>Trauma-Informed Interventions and Trauma-Focused CBT:</strong> Addressing the lasting effects of trauma in a way that respects your experience and promotes resilience.</li>
+            <li><strong>Motivational Interviewing:</strong> Helping you tap into the internal motivation needed to create meaningful change.</li>
+            <li><strong>Mindfulness, Grounding, and Relaxation Techniques:</strong> Providing practical tools to manage stress and stay present.</li>
+            <li><strong>Behavioral Management:</strong> Equipping you with skills to overcome obstacles and pursue your goals.</li>
+          </ul>
+
+          <h3>My commitment to you</h3>
+          <p>
+            We will work together to value and edify your voice, effectively utilize your unique talents, and achieve the life goals
+            that matter most to you. Your audacity to live a healthy, self-empowered life is the focus of our work together.
+          </p>
+
+          <p style="margin-top:1.25rem;">
+            <a href="index.html#contact" class="nav-cta" style="display:inline-flex;align-items:center;justify-content:center;padding:0.6rem 1.2rem;border-radius:999px;font-size:0.9rem;">
+              Schedule with Bobby
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        &copy; <span id="year"></span> Empowered Living Mental Health Solutions. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#providers">Clinicians</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const navToggle = document.getElementById("nav-toggle");
+    const nav = document.getElementById("site-nav");
+
+    navToggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  </script>
+</body>
+</html>

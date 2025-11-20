@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Akeya Watley, LPCC, LADC | Empowered Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        Empowered Living Mental Health Solutions
+        <span>Therapy & Rehabilitation in St. Paul, MN</span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">Our Approach</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#providers">Clinicians</a></li>
+          <li><a href="akeya.html">Akeya</a></li>
+          <li><a href="bobby.html">Bobby</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / PROFILE HEADER -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="badge">Clinician Profile</div>
+          <h1>Akeya Watley, LPCC, LADC</h1>
+          <p class="hero-subtitle">
+            Direct, down-to-earth, and culturally responsive care for anxiety, depression, trauma, substance use, and major life transitions.
+          </p>
+          <p class="hero-meta">
+            <strong>Specialties:</strong> Anxiety · Depression · Trauma · Substance Use · Life Transitions<br>
+            <strong>Populations:</strong> Adults and families · Multicultural and BIPOC communities
+          </p>
+        </div>
+        <div class="hero-photo">
+          <!-- Replace with a real photo for Akeya -->
+          <img src="images/akeya.jpg" alt="Photo of Akeya Watley">
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL BIO -->
+    <section>
+      <div class="container">
+        <div class="bio-card">
+          <p>
+            Life's journey comes with its share of burdens—anxiety, depression, past trauma, and difficult transitions. My name is
+            <strong>Akeya Watley</strong>, and as an LPCC and LADC, I provide a compassionate, straightforward, and culturally responsive
+            space for you to navigate these challenges. My mission is to guide you toward healing, empowering you to live a healthy,
+            authentic, and happy life.
+          </p>
+
+          <h3>A direct, down-to-earth therapeutic style</h3>
+          <p>
+            My therapeutic approach is warm, down-to-earth, and always centered on your unique needs. I'm known for blending a direct
+            approach with a good sense of humor, which helps clients feel at ease as we work to uncover what truly matters. Therapy
+            with me is a space where you can be honest, feel deeply supported, and make real progress—and if we share a laugh along
+            the way, that's just part of the healing process.
+          </p>
+
+          <h3>Culturally competent and trauma-informed care</h3>
+          <p>
+            As an African American female psychotherapist, I am acutely aware of the unique social and emotional landscapes many of
+            my clients navigate. I am committed to creating a space where you feel seen, heard, and understood without judgment, while
+            honoring the cultural context of your experiences. My practice is also trauma-informed, ensuring a safe and supportive
+            environment for those seeking to process and heal from the emotional and social impacts of trauma.
+          </p>
+
+          <h3>Empowering your journey with evidence-based practices</h3>
+          <p>To support your growth, I utilize a range of evidence-based practices and interventions, tailored to your needs and goals:</p>
+          <ul>
+            <li><strong>Cognitive Behavioral Therapy (CBT):</strong> To help identify and shift unhelpful thought patterns.</li>
+            <li><strong>Mindfulness:</strong> Building awareness and grounding in the present moment.</li>
+            <li><strong>Trauma-Informed Therapy:</strong> Processing and integrating the lasting effects of trauma with care and safety.</li>
+            <li><strong>Substance Use Counseling (LADC):</strong> Supporting individuals navigating addiction, recovery, and co-occurring concerns.</li>
+          </ul>
+
+          <h3>Your courage to thrive</h3>
+          <p>
+            Whether you are seeking to manage anxiety, overcome depression, heal from trauma, or navigate a major life transition, I am
+            here to support you. Therapy with me is about making meaningful progress, rediscovering your strength, and honoring your right
+            to a healthy and joyful life.
+          </p>
+
+          <p style="margin-top:1.25rem;">
+            <a href="index.html#contact" class="nav-cta" style="display:inline-flex;align-items:center;justify-content:center;padding:0.6rem 1.2rem;border-radius:999px;font-size:0.9rem;">
+              Schedule with Akeya
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        &copy; <span id="year"></span> Empowered Living Mental Health Solutions. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#providers">Clinicians</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const navToggle = document.getElementById("nav-toggle");
+    const nav = document.getElementById("site-nav");
+
+    navToggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  </script>
+</body>
+</html>
